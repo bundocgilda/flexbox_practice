@@ -1,0 +1,49 @@
+// Main Sass File
+
+//Variables
+$bg-dark: #071D25;
+$bg-light: #FFFFFF;
+$bg-gray: #F5F5F5;
+
+$text-white: #FFF;
+
+
+
+//Qlink
+.qlinks{
+	background-color: $bg-dark; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	li{
+
+		a{
+			color: $text-white;
+		}
+
+		&:not(:last-child):after{
+			width: 5px;
+			height: 5px;
+			background: $bg-light;
+			border-radius: 50%;
+			content: " ";
+			display: inline-block;
+			top: -3px;
+			position: relative;
+			margin: 0 10px;
+		}
+
+	}
+	
+}
+
+//Header
+#header{
+	background-color: $bg-light!important;
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

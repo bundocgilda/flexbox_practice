@@ -1,0 +1,26 @@
+.qlinks {
+  background-color: #071D25;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .qlinks li a {
+    color: #FFF; }
+  .qlinks li:not(:last-child):after {
+    width: 5px;
+    height: 5px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    content: " ";
+    display: inline-block;
+    top: -3px;
+    position: relative;
+    margin: 0 10px; }
+
+#header {
+  background-color: #FFFFFF !important;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 15px; }
