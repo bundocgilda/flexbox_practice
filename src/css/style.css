@@ -24,3 +24,16 @@
   transition: all 0.2s ease-in-out;
   padding-top: 15px;
   padding-bottom: 15px; }
+  #header a {
+    text-transform: uppercase; }
+
+#home-slider .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw; }
+  #home-slider .overlay img {
+    height: 100vh;
+    overflow: hidden; }
