@@ -1,14 +1,161 @@
 // Main Sass File
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900');
+
 //Variables
+$Montserrat: 'Montserrat', sans-serif;
+
 $bg-dark: #071D25;
 $bg-light: #FFFFFF;
 $bg-gray: #F5F5F5;
 
 $text-white: #FFF;
+$text-dark: #071D25;
 
 $dark-overlay: rgba(0,0,0,0.7);
 
+body{
+	font-family: $Montserrat;
+}
+
+.btn-primary{
+	color: $text-white;
+    background-color: $bg-dark;
+    border: 2px solid $bg-light;
+    text-transform: uppercase;
+    //font-weight: bold;
+
+    &:hover{
+    	color: $bg-dark;
+    	background-color: transparent;
+    	border: 2px solid $bg-dark;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    }
+}
+
+.btn-secondary{
+	color: $bg-dark;
+    background-color: $bg-light;
+    border: 2px solid $bg-light;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover{
+    	color: $bg-light;
+    	background-color: transparent;
+    	border: 2px solid $bg-light;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    }
+}
+
+.btn-outline-secondary{
+	color: $text-white;
+    border: 2px solid $bg-light;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover{
+    	color: $text-dark;
+    	background-color: $bg-light;
+    	border: 2px solid $bg-light;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    }
+}
+
+.bg-gray{
+	background-color: $bg-gray;
+}
+
+.bg-dark{
+	background-color: $bg-dark!important;
+}
+
+.section{
+	padding: 5rem 0;
+
+	&.gray{
+		background-color: $bg-gray;
+	}
+	
+	i{
+		margin-bottom: 1rem;
+	}
+
+	span{
+		font-weight: lighter;
+	}
+
+	span.title-divider{
+		position: relative;
+	    border-top: 4px solid #001d26;
+	    display: block;
+	    height: 2px;
+	    margin: 15px auto;
+	    width: 100px;
+
+		&:after{
+			content: "";
+		    border: 6px solid transparent;
+		    border-top-color: #001d26;
+		    position: absolute;
+		    top: 0;
+		    left: 50%;
+		    margin-left: -6px;
+		}
+	}
+
+	h2{
+		font-weight: bolder;
+	}
+
+	p{
+		line-height: 2;
+	    width: 50%;
+    	margin: 0 auto;
+    	margin-bottom: 4rem;
+	}
+}
+
+.card{
+	border: none;
+	margin-bottom: 1rem;
+
+	&.bg-dark{
+		background-color: $bg-dark;
+
+		.card-text{
+			color: $text-white;
+		}
+	}
+
+	&:hover .card-body{
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.25)
+	}
+
+	.card-body{
+		text-align: center;
+
+		i{
+			margin-bottom: 2rem;
+		}
+
+		h3{
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+
+		p{
+			width: 100%;
+			margin: 0;
+		}
+		
+	}
+}
 
 //Qlink
 .qlinks{
@@ -53,20 +200,140 @@ $dark-overlay: rgba(0,0,0,0.7);
     }
 }
 
-//Carousel
+//Home Section
 #home-slider{
+	
+	.carousel-item{
+		//display: inline-block;
+		//height: 100vh;
+		max-height: 600px;
+		overflow: hidden;
 
-	.overlay{
-		background-color: $dark-overlay;
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100vh;
-		width: 100vw;
+		.bg-overlay{
+			background-color: $dark-overlay;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+		}
 
 		img{
-			height: 100vh;
+			min-height: 100vh;
 			overflow: hidden;
+			width: 100%;
+
 		}
+
+		.hero{
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			color: $text-white;
+			text-align: center;
+
+			h1{
+				font-size: 3em;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			p{
+				font-size: 1em;
+				font-weight: lighter;
+			}
+
+
+		}
+	}
+	
+}
+
+//Our Services
+#services-sec{
+
+}
+
+#pricing-sec{
+
+	.card{
+		border: 1px solid #ccc;
+
+		.header{
+			background-color: $bg-dark;
+			color: $text-white;
+			text-align: center;
+			padding: 2rem;
+			position:relative;
+
+			&:after{
+				content: "";
+			    position: absolute;
+			    bottom: -16px;
+			    left: 50%;
+			    margin-left: -8px;
+			    border: 8px solid transparent;
+			    border-top-color: $bg-dark;
+			}
+
+			h1{
+				font-weight: lighter;
+				font-size: 2rem;
+
+				span{
+					font-weight: lighter;
+					font-size: 2rem;
+				}
+			}
+
+			p{
+				margin: 0 auto;
+			}
+		}
+
+		.card-body{
+			border-radius: 0;
+
+			ul{
+				list-style: none;
+				padding: 0;
+			}
+		}
+	}
+
+}
+
+#contact-sec{
+	form{
+		padding: 1.5em;
+
+		textarea{
+			resize: none;
+		}
+	}
+}
+
+footer{
+	color: $text-white;
+
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li{
+			display: inline-block;
+			padding: 0 .5rem;
+			i{
+				color: $text-white;
+			}
+			
+		}
+	}
+
+	p{
+		font-weight: lighter;
 	}
 }

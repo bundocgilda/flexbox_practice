@@ -1,3 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,900");
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.btn-primary {
+  color: #FFF;
+  background-color: #071D25;
+  border: 2px solid #FFFFFF;
+  text-transform: uppercase; }
+  .btn-primary:hover {
+    color: #071D25;
+    background-color: transparent;
+    border: 2px solid #071D25;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.btn-secondary {
+  color: #071D25;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-secondary:hover {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.btn-outline-secondary {
+  color: #FFF;
+  border: 2px solid #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .btn-outline-secondary:hover {
+    color: #071D25;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.bg-gray {
+  background-color: #F5F5F5; }
+
+.bg-dark {
+  background-color: #071D25 !important; }
+
+.section {
+  padding: 5rem 0; }
+  .section.gray {
+    background-color: #F5F5F5; }
+  .section i {
+    margin-bottom: 1rem; }
+  .section span {
+    font-weight: lighter; }
+  .section span.title-divider {
+    position: relative;
+    border-top: 4px solid #001d26;
+    display: block;
+    height: 2px;
+    margin: 15px auto;
+    width: 100px; }
+    .section span.title-divider:after {
+      content: "";
+      border: 6px solid transparent;
+      border-top-color: #001d26;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -6px; }
+  .section h2 {
+    font-weight: bolder; }
+  .section p {
+    line-height: 2;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4rem; }
+
+.card {
+  border: none;
+  margin-bottom: 1rem; }
+  .card.bg-dark {
+    background-color: #071D25; }
+    .card.bg-dark .card-text {
+      color: #FFF; }
+  .card:hover .card-body {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.25); }
+  .card .card-body {
+    text-align: center; }
+    .card .card-body i {
+      margin-bottom: 2rem; }
+    .card .card-body h3 {
+      text-transform: uppercase;
+      font-weight: 400; }
+    .card .card-body p {
+      width: 100%;
+      margin: 0; }
+
 .qlinks {
   background-color: #071D25;
   padding-top: 10px;
@@ -27,13 +127,80 @@
   #header a {
     text-transform: uppercase; }
 
-#home-slider .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw; }
-  #home-slider .overlay img {
-    height: 100vh;
-    overflow: hidden; }
+#home-slider .carousel-item {
+  max-height: 600px;
+  overflow: hidden; }
+  #home-slider .carousel-item .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  #home-slider .carousel-item img {
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%; }
+  #home-slider .carousel-item .hero {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    text-align: center; }
+    #home-slider .carousel-item .hero h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      font-weight: bold; }
+    #home-slider .carousel-item .hero p {
+      font-size: 1em;
+      font-weight: lighter; }
+
+#pricing-sec .card {
+  border: 1px solid #ccc; }
+  #pricing-sec .card .header {
+    background-color: #071D25;
+    color: #FFF;
+    text-align: center;
+    padding: 2rem;
+    position: relative; }
+    #pricing-sec .card .header:after {
+      content: "";
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      margin-left: -8px;
+      border: 8px solid transparent;
+      border-top-color: #071D25; }
+    #pricing-sec .card .header h1 {
+      font-weight: lighter;
+      font-size: 2rem; }
+      #pricing-sec .card .header h1 span {
+        font-weight: lighter;
+        font-size: 2rem; }
+    #pricing-sec .card .header p {
+      margin: 0 auto; }
+  #pricing-sec .card .card-body {
+    border-radius: 0; }
+    #pricing-sec .card .card-body ul {
+      list-style: none;
+      padding: 0; }
+
+#contact-sec form {
+  padding: 1.5em; }
+  #contact-sec form textarea {
+    resize: none; }
+
+footer {
+  color: #FFF; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    footer ul li {
+      display: inline-block;
+      padding: 0 .5rem; }
+      footer ul li i {
+        color: #FFF; }
+  footer p {
+    font-weight: lighter; }

@@ -10,7 +10,7 @@
     </head>
 
     <body id="home-head-sec">
-        <div class="qlinks ">
+        <div class="qlinks d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <ul class="nav col-4">
@@ -60,15 +60,6 @@
                             <a href="#pricing-sec" class="nav-link">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio-sec" class="nav-link">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#team-sec" class="nav-link">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#blog-sec" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#contact-sec" class="nav-link">Contact</a>
                         </li>
                     </ul>
@@ -77,21 +68,244 @@
         </nav>
 
         <!-- HOME -->
-        <div id="home-slider" class="carousel slide" data-ride="carousel">
-            
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="overlay">
-                  <img class="d-block w-100" src="../img/banner.jpg" alt="First slide">
+        <div id="home-sec">
+            <div id="home-slider" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="bg-overlay"></div>
+                    <img class="d-block w-100" src="../img/banner.jpg" alt="First slide">
+                    <div class="hero">
+                        <h1>Lorem ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse impedit cumque autem adipisci dolores</p>
+                        <button type="button" class="btn btn-secondary">See Pricing</button>
+                        <button type="button" class="btn btn-outline-secondary">Contact Us</button>
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="bg-overlay"></div>
+                    <img class="d-block w-100" src="../img/banner2.jpeg" alt="First slide">
+                    <div class="hero">
+                        <h1>Lorem ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse impedit cumque autem adipisci dolores laboriosam fuga accusantium natus, repudiandae quod ratione omnis odit harum vel odio!</p>
+                        <button type="button" class="btn btn-secondary">See Pricing</button>
+                        <button type="button" class="btn btn-outline-secondary">Contact Us</button>
+                    </div>
+                </div>
+
               </div>
+              <a class="carousel-control-prev" href="#home-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#home-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        
+
+        <!-- SERVICES -->
+        <div id="services-sec" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <span>LOREM IPSUM DOLOR SIT AMET</span>
+                        <h2>OUR SERVICES</h2>
+                        <span class="title-divider"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-life-ring fa-5x" aria-hidden="true"></i>
+                                <h3 class="card-title">Planning</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-money fa-5x" aria-hidden="true"></i>
+                                <h3 class="card-title">Finance</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-paper-plane-o fa-5x" aria-hidden="true"></i>
+                                <h3 class="card-title">Ideas</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
-        <!-- SERVICES -->
+        <!-- PRICING -->
+        <div id="pricing-sec" class="section gray">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <span>LOREM IPSUM DOLOR SIT AMET</span>
+                        <h2>POPULER PRICING</h2>
+                        <span class="title-divider"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h1>$<strong>8</strong>.<span>95</span></h1>
+                                <p>Starter</p>
+                            </div>
+                            <div class="card-body">
+                                <span>40% OFF</span>
+                                <h3 class="card-title">Package 1</h3>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Lorem ipsum</li>
+                                        <li>Lorem ipsum dolor</li>
+                                        <li>Lorem ipsum</li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h1>$<strong>8</strong>.<span>95</span></h1>
+                                <p>Starter</p>
+                            </div>
+                            <div class="card-body">
+                                <span>40% OFF</span>
+                                <h3 class="card-title">Package 2</h3>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Lorem ipsum</li>
+                                        <li>Lorem ipsum dolor</li>
+                                        <li>Lorem ipsum</li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h1>$<strong>8</strong>.<span>95</span></h1>
+                                <p>Starter</p>
+                            </div>
+                            <div class="card-body">
+                                <span>40% OFF</span>
+                                <h3 class="card-title">Package 2</h3>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Lorem ipsum</li>
+                                        <li>Lorem ipsum dolor</li>
+                                        <li>Lorem ipsum</li>
+                                    </ul>
+                                </p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact-sec" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <span>LOREM IPSUM DOLOR SIT AMET</span>
+                        <h2>FEEL FREE TO CONTACT US</h2>
+                        <span class="title-divider"></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card bg-dark">
+                            <div>
+                                
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, temporibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="bg-gray">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="name" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="phone" placeholder="Phone">
+                          </div>
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="subject" placeholder="Subject">
+                          </div>
+                          <div class="form-group">
+                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea placeholder="Message">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="section bg-dark">
+            <div class="container">
+                <div class="row ">
+                    <div class="text-center w-100">
+                        <h1>BRAND</h1>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <p>Copyright &copy; Gilda Bundoc</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
     </body>
 </html>
