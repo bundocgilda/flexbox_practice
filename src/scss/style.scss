@@ -184,6 +184,22 @@ body{
 	
 }
 
+#scroll-to-top{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	background-color: $bg-dark;
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+    padding: 8px 15px;
+
+	i{
+		color: $text-white;
+	}
+
+}
+
 //Header
 #header{
 	background-color: $bg-light!important;
